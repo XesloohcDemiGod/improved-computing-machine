@@ -13,7 +13,8 @@
     "test": "npm run test --workspaces --if-present",
     "test:pw": "cd packages/assistant-sap-playwright && npx playwright test",
     "dev": "npm run dev --workspaces --if-present",
-    "lint": "npm run lint --workspaces --if-present"
+    "lint": "npm run lint --workspaces --if-present",
+    "demo": "npx ts-node demo-automation.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.0",
