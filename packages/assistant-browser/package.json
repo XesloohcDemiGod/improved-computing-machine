@@ -1,0 +1,19 @@
+{
+  "name": "@improved-computing/assistant-browser",
+  "version": "0.1.0",
+  "description": "Browser-based screenshot & stream automation assistant",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\"",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "workbox-window": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}

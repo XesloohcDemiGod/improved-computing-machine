@@ -1,0 +1,20 @@
+{
+  "name": "@improved-computing/assistant-sap-playwright",
+  "version": "0.1.0",
+  "description": "Playwright-based SAP UI5 automation and testing",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Use playwright test command from root\"",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@improved-computing/assistant-browser": "file:../assistant-browser"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}

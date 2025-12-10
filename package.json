@@ -1,0 +1,29 @@
+{
+  "name": "sookti-sap-automator",
+  "version": "0.1.0",
+  "description": "Browser-based SAP automation assistant with Playwright integration",
+  "private": true,
+  "workspaces": [
+    "packages/assistant-browser",
+    "packages/assistant-sap-playwright"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:pw": "cd packages/assistant-sap-playwright && npx playwright test",
+    "dev": "npm run dev --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "esbuild": "^0.19.0",
+    "eslint": "^8.50.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
